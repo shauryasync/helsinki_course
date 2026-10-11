@@ -10,5 +10,5 @@ participant Server
     Browser->>User: Renders the updated notes list on the page immediately
     Browser->>Server: HTTP POST /exampleapp/new_note_spa (JSON payload)
     Server-->>Browser: HTTP 201 Created (or status confirmation)
-    Note over Browser: Server confirms save&#59; no page reload needed.
+    Note over Browser: Server confirms save; no page reload needed.
 ```
