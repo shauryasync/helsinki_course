@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
 autonumber
 actor User
@@ -14,3 +15,4 @@ participant Server
     Server-->>Browser: JSON data (raw list of notes)
     Note over Browser: JavaScript executes callback<br/>function to render notes.
     Browser->>User: Renders notes to the DOM.
+```

@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
 autonumber
 actor User
@@ -10,3 +11,4 @@ participant Server
     Browser->>Server: HTTP POST /exampleapp/new_note_spa (JSON payload)
     Server-->>Browser: HTTP 201 Created (or status confirmation)
     Note over Browser: Server confirms save&#59; no page reload needed.
+```

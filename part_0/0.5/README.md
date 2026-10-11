@@ -1,8 +1,9 @@
+```mermaid
 sequenceDiagram
-autonumber
-actor User
-participant Browser
-participant Server
+    autonumber
+    actor User
+    participant Browser
+    participant Server
 
     User->>Browser: Types note in text field and clicks Save
     Browser->>Server: HTTP POST /exampleapp/new_note (payload: note)
@@ -13,3 +14,4 @@ participant Server
     Browser->>Server: HTTP GET /exampleapp/data.json (via main.js)
     Server-->>Browser: JSON array containing the new note
     Note over Browser: JavaScript executes event handler<br/>to render all notes including the new one
+```
